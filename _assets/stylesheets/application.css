@@ -1,0 +1,36 @@
+/*
+ *= require vendor/bootstrap
+ *= require vendor/default
+ *= require vendor/icons
+ *= require vendor/shortcodes
+ *= require vendor/widgets
+ *= require vendor/sliders
+ *= require vendor/bootstrap-responsive
+ *= require vendor/skin-red
+ */
+.box1 i, .fancybox2 i, .sbutton i, .intro i {
+  margin-right: 5px;
+}
+
+.boxlink i {
+  margin-right: 0px;
+}
+
+.captionicons {
+  margin-right: 5px;
+}
+
+input, button, select, textarea {
+  font-family: 'Arial';
+}
+
+body.boxed {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url(/assets/images/background.jpg);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-attachment: fixed;
+}

@@ -1,0 +1,16 @@
+//= require vendor/jquery.min
+//= require vendor/jquery-migrate.min
+//= require vendor/bootstrap
+//= require vendor/plugins
+//= require vendor/custom
+//= require vendor/shortcode
+//= require vendor/jquery.ui.core.min
+//= require vendor/jquery.ui.widget.min
+//= require vendor/jquery.ui.tabs.min
+//= require vendor/tabs
+//= require vendor/camera
+//= require vendor/carousel
+//= require vendor/carouselrecentportfolio
+//= require vendor/prettyPhoto
+//= require vendor/isotope
+//= require vendor/testimonial

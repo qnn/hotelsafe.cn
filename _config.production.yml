@@ -3,3 +3,7 @@ assets:
   compress:
     css: sass
     js:  uglifier
+
+www:
+  hotelsafe:
+    cn: http://www.hotelsafe.cn

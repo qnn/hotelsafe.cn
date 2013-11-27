@@ -46,16 +46,16 @@
                 .row-nav.navbar
                   .navbar-inner
                     %ul#menu-header.nav
-                      %li#menu-item-12.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-10.current_page_item.active.menu-item-12
-                        %a{:href => "http://www.hotelsafe.cn/"} 首页
-                      %li#menu-item-33.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-33
-                        %a{:href => "/about/"} 全能简介
-                      %li#menu-item-33.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-33
-                        %a{:href => "/products/"} 常规产品
-                      %li#menu-item-33.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-33
-                        %a{:href => "/cases/"} 客户案例
-                      %li#menu-item-33.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-33
-                        %a{:href => "/contact/"} 联系我们
+                      %li{ class: "{% if page.belongs_to == '/' %}active{% endif %}" }
+                        %a{:href => "{{ site.www.hotelsafe.cn }}/"} 首页
+                      %li{ class: "{% if page.belongs_to == 'about' %}active{% endif %}" }
+                        %a{:href => "{{ site.www.hotelsafe.cn }}/about/"} 全能简介
+                      %li{ class: "{% if page.belongs_to == 'products' %}active{% endif %}" }
+                        %a{:href => "{{ site.www.hotelsafe.cn }}/products/"} 常规产品
+                      %li{ class: "{% if page.belongs_to == 'cases' %}active{% endif %}" }
+                        %a{:href => "{{ site.www.hotelsafe.cn }}/cases/"} 客户案例
+                      %li{ class: "{% if page.belongs_to == 'contact' %}active{% endif %}" }
+                        %a{:href => "{{ site.www.hotelsafe.cn }}/contact/"} 联系我们
         .menushadow
         {{ content }}
         %footer#colophon.site-footer{:role => "contentinfo"}

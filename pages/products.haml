@@ -1,0 +1,28 @@
+---
+layout: default
+belongs_to: products
+permalink: /products/
+---
+.container
+  .row-fluid
+    .span12
+      #filter
+        %ul
+          %li
+            %a.selected{"data-filter" => "*", href: "#"} 全部
+          %li
+            %a{"data-filter" => ".type-1", href: "#"} 类型一
+          %li
+            %a{"data-filter" => ".type-2", href: "#"} 类型二
+          %li
+            %a{"data-filter" => ".type-3", href: "#"} 类型三
+          %li
+            %a{"data-filter" => ".type-4", href: "#"} 类型四
+
+.container
+  #content
+    .boxportfolio3.type-1{"data-id" => "id-1", "data-order" => "1"}
+      .boxcontainer
+        %a{href: "/"}
+          %img.attachment-.wp-post-image{alt: "1", height: "400", src: "http://stores.qnnimg.com/products/hg-2740-01.jpg", width: "400"}/
+        %p ABC

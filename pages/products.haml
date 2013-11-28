@@ -21,8 +21,10 @@ permalink: /products/
 
 .container
   #content
+    {% for post in site.categories.products reversed %}
     .boxportfolio3.type-1{"data-id" => "id-1", "data-order" => "1"}
       .boxcontainer
-        %a{href: "/"}
-          %img.attachment-.wp-post-image{alt: "1", height: "400", src: "http://stores.qnnimg.com/products/hg-2740-01.jpg", width: "400"}/
-        %p ABC
+        %a{href: "{{ post.url }}"}
+          %img{height: "400", src: "{{ post.image }}", width: "400"}/
+        %p {{ post.name }}
+    {% endfor %}

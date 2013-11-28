@@ -13,4 +13,5 @@
 //= require vendor/carouselrecentportfolio
 //= require vendor/prettyPhoto
 //= require vendor/isotope
+//= require vendor/flexslider
 //= require vendor/testimonial

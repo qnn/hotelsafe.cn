@@ -1,0 +1,24 @@
+---
+layout: default
+---
+.container.site-content
+  .container
+    .row-fluid
+      #primary
+        %div{role: "main"}
+          %article
+            %header.entry-header.sectiontitlepost
+              %h1.entry-title {{ page.name }}
+            .headerdivider
+            .entry-content
+              .row-fluid
+                .span6
+                  %p {{ content }}
+                .span6
+                  %div{style: "height: 10px"}
+                  .flexslider
+                    %ul.slides.clearfix
+                      {% for image in page.images %}
+                      %li
+                        %img{alt: "slide", src: "{{ image }}", width: "458"}/
+                      {% endfor %}

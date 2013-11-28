@@ -1,0 +1,30 @@
+---
+layout: default
+belongs_to: cases
+permalink: /cases/
+---
+.container
+  .row-fluid
+    .span12
+      #filter
+        %ul
+          %li
+            %a.selected{"data-filter" => "*", href: "#"} 全部
+          %li
+            %a{"data-filter" => ".type-1", href: "#"} 类型一
+          %li
+            %a{"data-filter" => ".type-2", href: "#"} 类型二
+          %li
+            %a{"data-filter" => ".type-3", href: "#"} 类型三
+          %li
+            %a{"data-filter" => ".type-4", href: "#"} 类型四
+
+.container
+  #content
+    {% for post in site.categories.cases reversed %}
+    .boxportfolio3.type-1{"data-id" => "id-1", "data-order" => "1"}
+      .boxcontainer
+        %a{href: "{{ post.url }}"}
+          %img{height: "400", src: "{{ post.images[0] }}", width: "400"}/
+        %p {{ post.name }}
+    {% endfor %}

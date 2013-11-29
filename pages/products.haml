@@ -12,18 +12,14 @@ title: 常规产品
           %li
             %a.selected{"data-filter" => "*", href: "#"} 全部
           %li
-            %a{"data-filter" => ".type-1", href: "#"} 类型一
+            %a{"data-filter" => ".type-jdkfbxx", href: "#"} 酒店客房保管箱
           %li
-            %a{"data-filter" => ".type-2", href: "#"} 类型二
-          %li
-            %a{"data-filter" => ".type-3", href: "#"} 类型三
-          %li
-            %a{"data-filter" => ".type-4", href: "#"} 类型四
+            %a{"data-filter" => ".type-jddtbxx", href: "#"} 酒店大堂保管箱
 
 .container
   #content
     {% for post in site.categories.products reversed %}
-    .boxportfolio3.type-1{"data-id" => "id-1", "data-order" => "1"}
+    %div{class: "boxportfolio3{% for type in post.types %} type-{{ type }}{% endfor %}"}
       .boxcontainer
         %a{href: "{{ post.url }}"}
           %img{height: "400", src: "{{ post.image }}", width: "400"}/

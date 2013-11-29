@@ -23,7 +23,7 @@ title: 客户案例
 .container
   #content
     {% for post in site.categories.cases reversed %}
-    .boxportfolio3.type-1{"data-id" => "id-1", "data-order" => "1"}
+    %div{class: "boxportfolio3{% for type in post.types %} type-{{ type }}{% endfor %}"}
       .boxcontainer
         %a{href: "{{ post.url }}"}
           %img{height: "400", src: "{{ post.images[0] }}", width: "400"}/

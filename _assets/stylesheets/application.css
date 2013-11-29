@@ -34,3 +34,37 @@ body.boxed {
   background-position: center left;
   background-attachment: fixed;
 }
+
+.icon-wb {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: url(/assets/images/icon-weibo.png) no-repeat;
+}
+
+.icon-qnn {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: url(/assets/images/icon-qnn.png) no-repeat;
+}
+
+.icon-zs {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: url(/assets/images/icon-zs.png) no-repeat;
+}
+
+.icon-weixin {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: url(/assets/images/icon-weixin.png) no-repeat;
+}
+
+ul.social-icons li {
+  padding: 0px;
+  width: 26px;
+  height: 26px;
+}

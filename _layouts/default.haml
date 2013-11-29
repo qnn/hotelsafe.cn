@@ -23,17 +23,13 @@
                 .topinfo
                   %ul.social-icons.list-soc
                     %li
-                      %a{:href => "http://www.qnnsafe.com/", :target => "_blank"}
-                        %i.icon-facebook
+                      %a.icon-qnn{:href => "http://www.qnnsafe.com/", :target => "_blank"}
                     %li
-                      %a{:href => "http://www.qnnsafe.com.cn/", :target => "_blank"}
-                        %i.icon-twitter
+                      %a.icon-zs{:href => "http://www.qnnsafe.com.cn/", :target => "_blank"}
                     %li
-                      %a{:href => "#", :target => "_blank"}
-                        %i.icon-google-plus
+                      %a.icon-wb{:href => "http://weibo.qnnsafe.com/", :target => "_blank"}
                     %li
-                      %a{:href => "#", :target => "_blank"}
-                        %i.icon-skype
+                      %a.icon-weixin{"data-toggle" => "modal", :href => "#weixin-modal"}
                   .infophone
                     %i.icon-phone
                     TEL: +86 0757-22308196
@@ -55,6 +51,15 @@
                         %a{:href => "{{ site.www.hotelsafe.cn }}/contact/"} 联系我们
         .menushadow
         {{ content }}
+        #weixin-modal.modal.hide.fade
+          .modal-header
+            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+            %h3 扫描微信二维码添加全能微信服务号
+          .modal-body
+            .weixinqrcode
+              %img{src: "/assets/images/weixin_qrcode.png"}/
+          .modal-footer
+            %a.btn.btn-square{"data-dismiss" => "modal"} 关闭
         %footer#colophon.site-footer{:role => "contentinfo"}
           .footer.footerdark
             .text-center.wraptotop

@@ -4,6 +4,7 @@
   Source of this website can be found on https://github.com/qnn/hotelsafe.cn
 %html.no-js
   %head
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" }
     %meta{ charset: "UTF-8" }
     %title {% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">

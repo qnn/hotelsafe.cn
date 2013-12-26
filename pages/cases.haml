@@ -5,22 +5,6 @@ permalink: /cases/
 title: 客户案例
 ---
 .container
-  .row-fluid
-    .span12
-      #filter
-        %ul
-          %li
-            %a.selected{"data-filter" => "*", href: "#"} 全部
-          %li
-            %a{"data-filter" => ".type-1", href: "#"} 类型一
-          %li
-            %a{"data-filter" => ".type-2", href: "#"} 类型二
-          %li
-            %a{"data-filter" => ".type-3", href: "#"} 类型三
-          %li
-            %a{"data-filter" => ".type-4", href: "#"} 类型四
-
-.container
   #content
     {% for post in site.categories.cases reversed %}
     %div{class: "boxportfolio3{% for type in post.types %} type-{{ type }}{% endfor %}"}
